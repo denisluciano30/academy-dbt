@@ -16,3 +16,7 @@ sources:
               - not_null
       - name: salesreason
         description: Razão da venda 
+      - name: creditcard
+        description: Dados cartão de crédito
+      - name: product
+        description: Produtos
