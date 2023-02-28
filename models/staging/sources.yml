@@ -20,3 +20,15 @@ sources:
         description: Dados cartão de crédito
       - name: product
         description: Produtos
+      - name: productcategory
+        description: Categoria do produto.
+      - name: person
+        description: Dados de pessoas
+      - name: customer
+        description: Clientes
+      - name: address
+        description: Endereços
+      - name: salesorderheadersalesreason
+        description: Tabela que relaciona tabela com razão de venda
+      - name: salesorderdetail
+        description: Detalhe vendas
