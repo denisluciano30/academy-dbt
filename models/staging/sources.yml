@@ -32,3 +32,5 @@ sources:
         description: Tabela que relaciona tabela com razão de venda
       - name: salesorderdetail
         description: Detalhe vendas
+      - name: countryregion
+        description: País
