@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: erp
+    description: Banco AdventureWorks
+    schema: sap_adw 
+    tables:
+
+      - name: salesorderheader
+        description: Descrição
+        columns: 
+          - name: salesorderid
+            description: Descrição 
+            tests:
+              - unique
+              - not_null
+      - name: salesreason
+        description: Razão da venda 
+      - name: creditcard
+        description: Dados cartão de crédito
+      - name: product
+        description: Produtos
+      - name: productcategory
+        description: Categoria do produto.
+      - name: person
+        description: Dados de pessoas
+      - name: customer
+        description: Clientes
+      - name: address
+        description: Endereços
+      - name: salesorderheadersalesreason
+        description: Tabela que relaciona tabela com razão de venda
+      - name: salesorderdetail
+        description: Detalhe vendas
+      - name: countryregion
+        description: País
