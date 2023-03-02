@@ -5,7 +5,6 @@ with source_creditcard as (
 	    cast(cardnumber as int) as numero_cartao,
 	    cast(expmonth as int) as mes_expiracao,
 	    cast(expyear as int) as ano_expiracao
-	    --modifieddate
     
     from {{source('erp','creditcard')}}
 )
