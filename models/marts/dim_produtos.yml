@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Tabela de dimensão de produtos
+    columns:
+      - name: produto_id
+        description: Identificador do produto
+        tests:
+          - not_null   

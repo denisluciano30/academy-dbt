@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: dim_razaovenda
+    description: Tabela de dimensão de razão de venda
+    columns:
+      - name: razao_venda_id
+        description: Identificador da razaovenda
+        tests:
+          - not_null   
