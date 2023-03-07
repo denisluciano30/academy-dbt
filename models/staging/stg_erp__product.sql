@@ -1,6 +1,5 @@
 with source_product as (
     select
-
         cast(productid as int) as produto_id, 
         cast(name as string) as nome,
         cast(productnumber as string) as numero_produto,

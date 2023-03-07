@@ -1,8 +1,16 @@
 with clientes as (
-    SELECT *
+    SELECT 
+        cliente_id,
+        pessoa_id,
+        regiao_id
     FROM {{ ref('stg_erp__customer') }}
 ), pessoas as (
-    SELECT *
+    SELECT 
+        pessoa_id,
+        tipo_pessoa,
+        primeiro_nome,
+        nome_meio,
+        ultimo_nome
     FROM {{ ref('stg_erp__person') }}
 )
 select 
