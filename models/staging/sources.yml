@@ -24,6 +24,8 @@ sources:
         description: Categoria do produto.
       - name: person
         description: Dados de pessoas
+      - name: store
+        description: Dados da loja       
       - name: customer
         description: Clientes
       - name: address
