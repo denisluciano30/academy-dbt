@@ -28,9 +28,12 @@ sources:
         description: Clientes
       - name: address
         description: Endereços
+      - name: stateprovince
+        description: Estado
+      - name: countryregion
+        description: País
       - name: salesorderheadersalesreason
         description: Tabela que relaciona tabela com razão de venda
       - name: salesorderdetail
         description: Detalhe vendas
-      - name: countryregion
-        description: País
+      
