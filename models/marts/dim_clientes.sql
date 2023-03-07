@@ -18,8 +18,6 @@ select
     c.regiao_id,
     p.pessoa_id,
     CONCAT(primeiro_nome, ' ', nome_meio, ' ', ultimo_nome) AS nome
-    
-
 
 from clientes c
 left join pessoas p on c.pessoa_id = p.pessoa_id

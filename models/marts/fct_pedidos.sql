@@ -39,6 +39,8 @@ select
     pd.quantidade_pedido,
     pd.produto_id,
     pd.preco_unitario,
+    (pd.preco_unitario *  pd.quantidade_pedido) as valor_bruto,
+    (pd.preco_unitario *  pd.quantidade_pedido) * (1 - desconto_preco_unitario) as valor_liquido,
     pd.desconto_preco_unitario
 from pedidos p
 left join pedidosdetalhes pd on p.pedido_id = pd.pedido_id
