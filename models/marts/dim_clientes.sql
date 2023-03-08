@@ -23,9 +23,10 @@ select
     c.cliente_id,
     c.regiao_id,
     p.pessoa_id,
+    l.loja_id,
     (case
         when c.loja_id is not null then l.nome
-        else CONCAT(primeiro_nome, ' ', nome_meio, ' ', ultimo_nome)
+        else CONCAT(IFNULL(primeiro_nome, ''), ' ', IFNULL(nome_meio, ''), ' ', IFNULL(ultimo_nome, ''))
     end) as nome
 
 from clientes c

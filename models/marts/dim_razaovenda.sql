@@ -12,11 +12,10 @@ with razaovenda as (
 )
 SELECT 
   rvp.pedido_id AS pedido_id,
-  STRING_AGG(rv.nome, ', ') AS razoes_de_venda
+  rvp.razao_venda_id,
+  rv.nome
 FROM 
   razaovendapedido rvp
   LEFT JOIN razaovenda rv on rvp.razao_venda_id = rv.razao_venda_id
-GROUP BY 
-  rvp.pedido_id
 
 
