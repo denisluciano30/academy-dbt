@@ -8,4 +8,8 @@ models:
       - name: pedido_id
         description: Identificador do pedido
         tests:
-          - not_null   
+          - not_null  
+      - name: valor_bruto
+        description: para não precisarmos sempre multiplicar numero de pedidos por valor unitário, criamos esse campo calculado
+      - name: valor_liquido
+        description: campo de valor já desconsiderando o desconto.
