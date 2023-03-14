@@ -7,10 +7,10 @@ sources:
     tables:
 
       - name: salesorderheader
-        description: Descrição
+        description: tabela principal onde é registrada os pedidos(vendas)
         columns: 
           - name: salesorderid
-            description: Descrição 
+            description: campo de identificacão única do pedido 
             tests:
               - unique
               - not_null
