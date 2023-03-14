@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: fct_pedidos
+    description: Tabela de fatos de pedidos
+    columns:
+      - name: pedido_id
+        description: Identificador do pedido
+        tests:
+          - not_null   

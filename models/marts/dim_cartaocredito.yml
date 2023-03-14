@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: dim_cartaocredito
+    description: Tabela de dimensão de cartao de crédio
+    columns:
+      - name: cartao_credito_id
+        description: Identificador do cartao de credito
+        tests:
+          - not_null   

@@ -5,8 +5,7 @@ with source_address as (
         cast (city as string) as cidade,
         cast(addressline1 as string) as endereco1,
         cast(addressline2 as string) as endereco2,
-        cast(postalcode as string) as CEP
-        --spatiallocation					
+        cast(postalcode as string) as CEP			
 
 
     from {{source('erp','address')}}

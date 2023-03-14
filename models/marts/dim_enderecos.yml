@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: dim_enderecos
+    description: Tabela de dimensão de endereço
+    columns:
+      - name: endereco_id
+        description: Identificador do endereço
+        tests:
+          - not_null   
